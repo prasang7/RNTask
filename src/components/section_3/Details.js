@@ -30,7 +30,8 @@ const Details = () => {
 const styles = {
   containerStyle: {
     paddingTop: 14,
-    paddingBottom: 30
+    paddingBottom: 30,
+    backgroundColor: '#ffffff'
   },
   urlSection: {
     marginLeft: 50,

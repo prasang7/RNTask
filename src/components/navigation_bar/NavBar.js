@@ -3,32 +3,35 @@ import { View, Image, TouchableOpacity } from 'react-native'
 
 const NavBar = () => {
   return (
-    <View style={styles.containerStle}>
-      <TouchableOpacity>
-        <Image
-          style={styles.iconStyle} source={require('./../../img/news.png')}
-        />
-      </ TouchableOpacity>
-      <TouchableOpacity>
-        <Image
-          style={styles.iconStyle} source={require('./../../img/search.png')}
-        />
-      </ TouchableOpacity>
-      <TouchableOpacity>
-        <Image
-          style={styles.iconStyle} source={require('./../../img/add.png')}
-        />
-      </ TouchableOpacity>
-      <TouchableOpacity>
-        <Image
-          style={styles.iconStyle} source={require('./../../img/inbox.png')}
-        />
-      </ TouchableOpacity>
-      <TouchableOpacity>
-        <Image
-          style={styles.iconStyle} source={require('./../../img/profile.png')}
-        />
-      </ TouchableOpacity>
+    <View>
+      <View style={{ backgroundColor: '#000', height: 1 }}/>
+      <View style={styles.containerStle}>
+        <TouchableOpacity>
+          <Image
+            style={styles.iconStyle} source={require('./../../img/news.png')}
+          />
+        </ TouchableOpacity>
+        <TouchableOpacity>
+          <Image
+            style={styles.iconStyle} source={require('./../../img/search.png')}
+          />
+        </ TouchableOpacity>
+        <TouchableOpacity>
+          <Image
+            style={styles.iconStyle} source={require('./../../img/add.png')}
+          />
+        </ TouchableOpacity>
+        <TouchableOpacity>
+          <Image
+            style={styles.iconStyle} source={require('./../../img/inbox.png')}
+          />
+        </ TouchableOpacity>
+        <TouchableOpacity>
+          <Image
+            style={styles.iconStyle} source={require('./../../img/profile.png')}
+          />
+        </ TouchableOpacity>
+      </View>
     </View>
   );
 };
