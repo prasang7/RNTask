@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, Image } from 'react-native';
+import { View, Text, Image, Linking, TouchableOpacity } from 'react-native';
 
 const Details = () => {
   return (
@@ -9,9 +9,13 @@ const Details = () => {
           style={styles.webIcon}
           source={require('./../../img/web.png')}
         />
-        <Text style={styles.urlText}>
-          http:{'/'}{'/'}www.cbc.ca{'/'}olympics{'/'}trainingground
-        </Text>
+        <TouchableOpacity onPress={() => Linking.openURL('http://www.cbc.ca/olympics/trainingground')}>
+          <Text
+            style={styles.urlText}>
+            http:{'/'}{'/'}www.cbc.ca{'/'}olympics{'/'}trainingground
+          </Text>
+        </TouchableOpacity>
+
       </View>
       <Text style={styles.textualDetail}>
         RBC, in partnership with the CBC, the Canadian Olympic Committe (COC)
