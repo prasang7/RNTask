@@ -26,7 +26,7 @@ const Details = () => {
 const styles = {
   containerStyle: {
     paddingTop: 14,
-    paddingBottom: 20
+    paddingBottom: 30
   },
   urlSection: {
     marginLeft: 50,
